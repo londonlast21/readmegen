@@ -6,8 +6,8 @@ const markdown = require("./utils/generateMarkdown");
 
 
 // array of questions for user
-
-inquirer.prompt([
+const promptUser = () => {
+return inquirer.prompt([
             {
                 type: 'input',
                 name: 'title',
@@ -38,9 +38,9 @@ inquirer.prompt([
                 type:'input',
                 name: 'description',
                 message: 'Enter project description (Required)',
-                validate: username => {
-                    if (username) {
-                        if (username) {
+                validate: description => {
+                    if (description) {
+                        if (description) {
                             return true;
                         } else {
                             console.log('Please enter a description');
@@ -49,18 +49,24 @@ inquirer.prompt([
                     }
                 }
             },
-            {
+            {// ask if they want to create one
                 type: 'input',
                 name: 'tableOfContents',
-                message: 'Enter table of contents',
-                validate: description => {
-                    if (description) {
-                        return true;
-                    } else {
-                        console.log('Please enter information');
-                        return false;
-                    }
-                }
+                message: 'Enter title of section for table of contents',
+                default: true
+            
+            },
+            { 
+                type: 'confirm',
+                name: 'anotherHeading',
+                message: 'Would you like to add another heading?',
+                default: true
+            },
+            { 
+                type: 'input',
+                name: 'chapterTitle',
+                message: 'Enter another title',
+                when: ({tableOfContents}) => tableOfContents
             },
             {
                 type: 'input',
@@ -88,19 +94,12 @@ inquirer.prompt([
                     }
                 }
             },
-            // // this needs to be a dropdown bar{
-            //     type: 'list',
-            //     name: 'license',
-            //     message: 'Enter licensing information (Required)',
-            //     validate: nameInput => {
-            //         if (nameInput) {
-            //             return true;
-            //         } else {
-            //             console.log('Please enter information!');
-            //             return false;
-            //         }
-            //     }
-            // //},
+            {
+            type: 'checkbox',
+            name: 'license',
+            message: 'Enter licensing information (Required)',
+            choices: []
+            },            
             {
                 type: 'input',
                 name: 'contribution',
@@ -131,7 +130,7 @@ inquirer.prompt([
             {
                 type: 'input',
                 name: 'questions',
-                message: 'Enter questions (Required)',
+                message: 'Enter your gitHub username (Required)',
                 validate: questions => {
                     if (questions) {
                         return true;
@@ -142,36 +141,40 @@ inquirer.prompt([
                 }
             }
         
-        ]);     
-
+        ])
         .then(function(response) {
             let generateREADME = markdown(response);
-            fs.writeFile('newREADME.md', generateREADME, function (err)
+            fs.writeFile('newREADME.md', generateREADME(data), function (err)
             {
                 if (err) {
                     return console.log(err);
                 }
                 console.log("Success!");
+                // test to see what values captured
+                console.log(response);
             });
         })
 
     .catch(error => {
-       if(error) {console.log(err);
+       if(error) {console.log(error);
        } else {
             console.log("other error");
        }
     });
+}
 
+// calling the prompt
+promptUser();
 
 
 // // // function to write README file
-// // function writeToFile(fileName, data) {
-// // }
+function writeToFile(fileName, data) {
+ }
 
 // // // function to initialize program
-// // function init() {
+function init() {
 
-// // }
+ }
 
 // // // function call to initialize program
-// // init();
+init();
