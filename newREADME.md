@@ -1,14 +1,14 @@
-# asdf
+# asd
   
   ## Badges: 
   <p>undefined<p>
 
   ## Username: 
-  <p>dasdfsa<p>
+  <p>londonla<p>
   
 
   ## Description: 
-  <p>asdf</p>
+  <p>asd</p>
   
   
 
@@ -19,7 +19,7 @@
   * [Contributions](#contributions)
   * [Tests](#tests)
   * [Licenses](#licenses)
-  * [Contact Me](#questions)
+  * [Questions](#questions)
 
  
    
@@ -27,11 +27,11 @@
   
 
   ## Installation: 
-  <p>asdf</p>
+  <p>ad</p>
   
 
   ## Usage: 
-  <p>sadf</p>
+  <p>ad</p>
   
 
   ## Licenses: 
@@ -40,17 +40,19 @@
   
 
   ## Contribution: 
-  <p>asf</p>
+  <p>sada</p>
   
 
   ## Test: 
-  <p>as</p>
+  <p>asd</p>
   
   
   ## Questions:
 
-  Email Me: sfd  
-  [My GitHub](https://github.com/dasdfsa)
+  If you have further questions, feel free to reach out to me:
+
+  Email Me: <londonlast21@gmail.com>  
+  [My GitHub](https://github.com/londonla)
   
 
   
