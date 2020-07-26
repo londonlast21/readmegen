@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/londonlast21/readmegen/issues"
   },
-  "homepage": "https://github.com/londonlast21/readmegen#readme"
+  "homepage": "https://github.com/londonlast21/readmegen#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "prompt": "^1.0.0"
+  }
 }
