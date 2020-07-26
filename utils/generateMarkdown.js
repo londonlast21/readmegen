@@ -19,7 +19,7 @@ function generateMarkdown(data) {
   <p>${generateBadges(data.licenses)}<p>
 
   ## Username: 
-  <p>${data.username}<p>
+  <p>${data.name}<p>
   
 
   ## Description: 
