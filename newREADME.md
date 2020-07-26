@@ -16,8 +16,8 @@
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage) 
-  * [Contributions](#contributions)
-  * [Tests](#tests)
+  * [Contribution](#contribution)
+  * [Test](#test)
   * [Licenses](#licenses)
   * [Questions](#questions)
 
