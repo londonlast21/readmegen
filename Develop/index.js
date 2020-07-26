@@ -20,7 +20,7 @@ inquirer.prompt([
                         return false;
                     }
                 }
-            }
+            },
             {
                 type: 'input',
                 name: 'name',
