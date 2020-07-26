@@ -142,16 +142,16 @@ return inquirer.prompt([
             }
         
         ])
-        .then(function(response) {
-            let generateREADME = markdown(data);
-            fs.writeFile('newREADME.md', generateREADME(data), function (err)
+        .then(function(data) {
+            //let generateREADME = markdown(response);
+            fs.writeFile('newREADME.md', markdown(data), function (err)
             {
                 if (err) {
                     return console.log(err);
                 }
                 console.log("Success!");
                 // test to see what values captured
-                console.log(response);
+                console.log(data);
             });
         })
 

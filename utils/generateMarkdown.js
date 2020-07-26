@@ -26,7 +26,9 @@ function generateMarkdown(data) {
   ## Test: ${data.test}
   
 
-  ## Questions: "https${data.questions}
+  ## Questions: 
+  
+  [Link to me](https://github.com/${data.questions})
   
 
   
