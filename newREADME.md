@@ -1,14 +1,14 @@
 # Jack's Project
   
   ## Badges: 
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Username: 
   <p>londonlast21</p>
   
 
   ## Description: 
-  <p>this is a sample</p>
+  <p>It is a sample</p>
   
   
 
@@ -16,8 +16,8 @@
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage) 
-  * [Contribution](#contribution)
-  * [Test](#test)
+  * [Contributions](#contributions)
+  * [Tests](#tests)
   * [Licenses](#licenses)
   * [Questions](#questions)
 
@@ -31,20 +31,20 @@
   
 
   ## Usage: 
-  <p>for creaeting files</p>
+  <p>Use to generate readmes</p>
   
 
   ## Licenses: 
-  <p>GNU</p>
+  <p>MIT</p>
 
   
 
   ## Contribution: 
-  <p>me and the cat</p>
+  <p>me and the kitty</p>
   
 
   ## Test: 
-  <p>no test data results</p>
+  <p>no test data</p>
   
   
   ## Questions:
