@@ -1,3 +1,5 @@
+const toc = require('markdown-toc');
+
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -8,7 +10,13 @@ function generateMarkdown(data) {
   ## Description: ${data.description}
   
 
-  ## Table of Contents: ${data.tableOfContents}
+  ## Table of Contents: 
+  this needs to loop for the entire list
+  var i;
+  for (i = 0; i < )
+  [TOC]${data.tableOfContents}
+ 
+  
   
 
   ## Installation: ${data.installation}
@@ -28,7 +36,8 @@ function generateMarkdown(data) {
 
   ## Questions: 
   
-  [Link to me](https://github.com/${data.questions})
+  ### [Link to email me]<${data.questions}>  
+  ### [My GitHub]: (https://github.com/${data.username})
   
 
   

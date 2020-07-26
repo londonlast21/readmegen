@@ -130,7 +130,7 @@ return inquirer.prompt([
             {
                 type: 'input',
                 name: 'questions',
-                message: 'Enter your gitHub username (Required)',
+                message: 'Enter your email (Required)',
                 validate: questions => {
                     if (questions) {
                         return true;
