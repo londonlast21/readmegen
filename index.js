@@ -21,19 +21,7 @@ return inquirer.prompt([
                     }
                 }
             },
-            {
-                type: 'input',
-                name: 'name',
-                message: 'What is your username? (Required)',
-                validate: username => {
-                    if (username) {
-                        return true;
-                    } else {
-                        console.log('Please enter your name');
-                        return false;
-                    }
-                }
-            },
+          
             {
                 type:'input',
                 name: 'description',
@@ -139,7 +127,20 @@ return inquirer.prompt([
                         return false;
                     }
                 }
-            }
+            },
+            {
+                type: 'input',
+                name: 'name',
+                message: 'What is your GitHub username? (Required)',
+                validate: name => {
+                    if (name) {
+                        return true;
+                    } else {
+                        console.log('Please enter your name');
+                        return false;
+                    }
+                }
+            },
         
         ])
         .then(function(data) {

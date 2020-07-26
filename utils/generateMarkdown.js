@@ -43,7 +43,7 @@ function generateMarkdown(data) {
   ## Questions:
 
   ### [Link to email me]<${data.questions}>  
-  ### [My GitHub]: (https://github.com/${data.username})
+  ### [My GitHub]: (https://github.com/${data.name})
   
 
   
