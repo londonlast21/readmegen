@@ -11,9 +11,18 @@ function generateMarkdown(data) {
   
   
 
-  ## Table of Contents: 
+  ## Table of Contents:
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage) 
+  * [Contributions](#contributions)
+  * [Tests](#tests)
+  * [Licenses](#licenses)
+  * [Questions](#questions)
+  * [Contact Me](#contact)
+  * 
  
-  toc(${data.collectInputs}) 
+  ${data.tableOfContents} 
   
   
 
@@ -34,6 +43,8 @@ function generateMarkdown(data) {
 
   ## Questions: 
   
+  ## Contact:
+
   ### [Link to email me]<${data.questions}>  
   ### [My GitHub]: (https://github.com/${data.username})
   

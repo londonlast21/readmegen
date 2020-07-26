@@ -11,7 +11,7 @@ return inquirer.prompt([
             {
                 type: 'input',
                 name: 'title',
-                message: 'Enter your project title',
+                message: 'Enter your project title (Required)',
                 validate: projectTitle => {
                     if (projectTitle) {
                         return true;
@@ -49,42 +49,25 @@ return inquirer.prompt([
                     }
                 }
             },
-           {const collectInputs = async(inputs = []) => { 
-            // ask if they want to create one
-                const prompts = [ 
-                {
-                type: 'input',
-                name: 'inputValue',
-                message: 'Enter title of section for table of contents',
-                },
-                {
-                type: 'confirm',
-                name: 'again',
-                message: 'Enter another heading?',
-                default: true
-                }
-            ];
-                const { again, ...answers } = await
-                inquirer.prompt(prompts);
-                const newInputs = [...inputs, answers];
-                return again ? collectInputs(newInputs) :
-                newInputs;
-            };
-            const main = async () => {
-                const inputs = await collectInputs();
-                console.log(inputs);
-            };
-            main();
-
-
-               
+            // {// ask if they want to create one
+            //     type: 'input',
+            //     name: 'tableOfContents',
+            //     message: 'Enter title of section for table of contents',
+            //     default: true
             
-            //{ 
-                // type: 'input',
-                // name: 'chapterTitle',
-                // message: 'Enter another title',
-                // when: ({anotherHeading}) => anotherHeading
-            //},
+            // },
+            // { 
+            //     type: 'confirm',
+            //     name: 'anotherHeading',
+            //     message: 'Would you like to add another heading?',
+            //     default: true
+            // },
+            // { 
+            //     // type: 'input',
+            //     // name: 'chapterTitle',
+            //     // message: 'Enter another title',
+            //     // when: ({anotherHeading}) => anotherHeading
+            // },
             {
                 type: 'input',
                 name:'installation',
