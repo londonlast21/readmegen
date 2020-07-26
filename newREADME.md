@@ -1,9 +1,11 @@
 # jack
+  
+  ## Badges: 
 
   ## Username: undefined
   
 
-  ## Description: asdas
+  ## Description: asda
   
   
 
@@ -24,13 +26,14 @@
   ## Installation: asda
   
 
-  ## Usage: asdas
+  ## Usage: asas
   
 
   ## Licenses: undefined
+
   
 
-  ## Contribution: asdsad
+  ## Contribution: Jack
   
 
   ## Test: asda
@@ -38,8 +41,8 @@
   
   ## Questions:
 
-  ### [Link to email me]<asdasd>  
-  ### [My GitHub]: (https://github.com/ahahaha)
+  ### [Link to email me]<aslkjaskld>  
+  ### [My GitHub]: (https://github.com/a;sl)
   
 
   

@@ -1,8 +1,9 @@
-const toc = require('markdown-toc');
 
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+  
+  ## Badges: 
 
   ## Username: ${data.username}
   
@@ -32,6 +33,7 @@ function generateMarkdown(data) {
   
 
   ## Licenses: ${data.licenses}
+
   
 
   ## Contribution: ${data.contribution}

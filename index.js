@@ -86,7 +86,7 @@ return inquirer.prompt([
             type: 'checkbox',
             name: 'license',
             message: 'Enter licensing information (Required)',
-            choices: []
+            choices: ['Javascript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
             },            
             {
                 type: 'input',
