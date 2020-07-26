@@ -18,9 +18,8 @@ function generateMarkdown(data) {
   * [Contributions](#contributions)
   * [Tests](#tests)
   * [Licenses](#licenses)
-  * [Questions](#questions)
-  * [Contact Me](#contact)
-  * 
+  * [Contact Me](#questions)
+
  
   ${data.tableOfContents} 
   
@@ -40,10 +39,8 @@ function generateMarkdown(data) {
 
   ## Test: ${data.test}
   
-
-  ## Questions: 
   
-  ## Contact:
+  ## Questions:
 
   ### [Link to email me]<${data.questions}>  
   ### [My GitHub]: (https://github.com/${data.username})
