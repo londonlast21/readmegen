@@ -1,32 +1,20 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const prompt = require('prompt');
 const markdown = require("./utils/generateMarkdown");
 
 
 
 
 // array of questions for user
-
-inquirer.prompt([
-            {
-                type: 'input',
-                name: 'title',
-                message: 'Enter your project title',
-                validate: title => {
-                    if (title) {
-                        return true;
-                    } else {
-                        console.log('Please enter a title');
-                        return false;
-                    }
-                }
-            }
+const questions = [
+    
             {
                 type: 'input',
                 name: 'name',
-                message: 'What is your username? (Required)',
-                validate: username => {
-                    if (username) {
+                message: 'What is your project name? (Required)',
+                validate: nameInput => {
+                    if (nameInput) {
                         return true;
                     } else {
                         console.log('Please enter your name');
@@ -38,9 +26,9 @@ inquirer.prompt([
                 type:'input',
                 name: 'description',
                 message: 'Enter project description (Required)',
-                validate: username => {
-                    if (username) {
-                        if (username) {
+                validate: nameInput => {
+                    if (nameInput) {
+                        if (nameInput) {
                             return true;
                         } else {
                             console.log('Please enter a description');
@@ -53,8 +41,8 @@ inquirer.prompt([
                 type: 'input',
                 name: 'tableOfContents',
                 message: 'Enter table of contents',
-                validate: description => {
-                    if (description) {
+                validate: nameInput => {
+                    if (nameInput) {
                         return true;
                     } else {
                         console.log('Please enter information');
@@ -66,8 +54,8 @@ inquirer.prompt([
                 type: 'input',
                 name:'installation',
                 message: 'Enter installation instructions (Required)',
-                validate: installation => {
-                    if (installation) {
+                validate: nameInput => {
+                    if (nameInput) {
                         return true;
                     } else {
                         console.log('Please enter information!');
@@ -79,8 +67,8 @@ inquirer.prompt([
                 type: 'input',
                 name: 'usage',
                 message: 'Enter usage for your project (Required)',
-                validate: usage =>{
-                    if (usage) {
+                validate: nameInput =>{
+                    if (nameInput) {
                         return true;
                     } else {
                         console.log('Please enter information!');
@@ -105,8 +93,8 @@ inquirer.prompt([
                 type: 'input',
                 name: 'contribution',
                 message: 'Enter contributor information (Required)',
-                validate: contribution => {
-                    if (contribution) {
+                validate: nameInput => {
+                    if (nameInput) {
                         return true;
                     } else {
                         console.log('Please enter information');
@@ -119,8 +107,8 @@ inquirer.prompt([
                 type: 'input',
                 name: 'tests',
                 message: 'Enter testing information (Required)',
-                validate: test => {
-                    if (test) {
+                validate: nameInput => {
+                    if (nameInput) {
                         return true;
                     } else {
                         console.log('Please enter information');
@@ -132,8 +120,8 @@ inquirer.prompt([
                 type: 'input',
                 name: 'questions',
                 message: 'Enter questions (Required)',
-                validate: questions => {
-                    if (questions) {
+                validate: nameInput => {
+                    if (nameInput) {
                         return true;
                     } else {
                         console.log('Please enter information');
@@ -142,19 +130,14 @@ inquirer.prompt([
                 }
             }
         
-        ]);     
+        
+];
 
-        .then(function(response) {
-            let generateREADME = markdown(response);
-            fs.writeFile('newREADME.md', generateREADME, function (err)
-            {
-                if (err) {
-                    return console.log(err);
-                }
-                console.log("Success!");
-            });
-        })
-
+ inquirer.prompt(questions)
+    .then((inquirerResponse, data) => {
+        console.log("Making ReadMe");
+        fs.writeFileSync("ReadMe.md", inquirerRespoonse, data);
+    })
     .catch(error => {
        if(error) {console.log(err);
        } else {
@@ -164,14 +147,14 @@ inquirer.prompt([
 
 
 
-// // // function to write README file
-// // function writeToFile(fileName, data) {
-// // }
+// // function to write README file
+// function writeToFile(fileName, data) {
+// }
 
-// // // function to initialize program
-// // function init() {
+// // function to initialize program
+// function init() {
 
-// // }
+// }
 
-// // // function call to initialize program
-// // init();
+// // function call to initialize program
+// init();
