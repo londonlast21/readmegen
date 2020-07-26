@@ -66,7 +66,7 @@ return inquirer.prompt([
                 type: 'input',
                 name: 'chapterTitle',
                 message: 'Enter another title',
-                when: ({tableOfContents}) => tableOfContents
+                when: ({anotherHeading}) => anotherHeading
             },
             {
                 type: 'input',
@@ -143,7 +143,7 @@ return inquirer.prompt([
         
         ])
         .then(function(response) {
-            let generateREADME = markdown(response);
+            let generateREADME = markdown(data);
             fs.writeFile('newREADME.md', generateREADME(data), function (err)
             {
                 if (err) {
