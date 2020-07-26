@@ -10,4 +10,4 @@ Use this app to generate a READme from prompts entered in the command line.
 
 
 ## Link to Video Demonstration:
-[Link to Demonstration]<>
+[Link to Demonstration]<https://drive.google.com/file/d/1b8RSuel2BtANAvopt8Tn12gBFWP5x699/view>
