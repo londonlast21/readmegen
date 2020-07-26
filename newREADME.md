@@ -1,14 +1,14 @@
-# k;lk
+# Sample READMe
   
   ## Badges: 
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Username: 
-  <p>london</p>
+  <p>londonlast21</p>
   
 
   ## Description: 
-  <p>;lk</p>
+  <p>This is an example description</p>
   
   
 
@@ -27,32 +27,32 @@
   
 
   ## Installation: 
-  <p>sdfds</p>
+  <p>To install this program, clone the file to your local computer and access it from the command Line.</p>
   
 
   ## Usage: 
-  <p>asd</p>
+  <p>For generating samples</p>
   
 
   ## Licenses: 
-  <p>GNU</p>
+  <p>MIT</p>
 
   
 
   ## Contribution: 
-  <p>ads</p>
+  <p>Me and the Cat</p>
   
 
   ## Test: 
-  <p>adsd</p>
+  <p>No current data</p>
   
   
   ## Questions:
 
   If you have further questions, feel free to reach out to me:
 
-  Email Me: <london@gmail.com>  
-  [My GitHub](https://github.com/london)
+  Email Me: <londonlast21@gmail.com>  
+  [My GitHub](https://github.com/londonlast21)
   
 
   
