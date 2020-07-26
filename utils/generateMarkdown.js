@@ -16,10 +16,10 @@ function generateMarkdown(data) {
   return `# ${data.title}
   
   ## Badges: 
-  <p>${generateBadges(data.licenses)}<p>
+  ${generateBadges(data.licenses)}
 
   ## Username: 
-  <p>${data.name}<p>
+  <p>${data.name}</p>
   
 
   ## Description: 
@@ -28,7 +28,7 @@ function generateMarkdown(data) {
   
 
   ## Table of Contents:
-  * [Description](#)
+  * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage) 
   * [Contributions](#contributions)

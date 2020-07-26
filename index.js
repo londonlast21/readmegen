@@ -63,7 +63,7 @@ return inquirer.prompt([
                 }
             },
             {
-            type: 'checkbox',
+            type: 'list',
             name: 'licenses',
             message: 'Enter licensing information (Required)',
             choices: ['Apache', 'GNU', 'MIT']
