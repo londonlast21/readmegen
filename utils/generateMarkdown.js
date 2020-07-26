@@ -17,10 +17,12 @@ function generateMarkdown(data) {
   
   ## Badges: ${generateBadges(data.licenses)}
 
-  ## Username: ${data.username}
+  ## Username: 
+  ###${data.username}
   
 
-  ## Description: ${data.description}
+  ## Description: 
+  <p>${data.description}</p>
   
   
 
