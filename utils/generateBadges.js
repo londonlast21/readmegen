@@ -1,5 +1,5 @@
 function generateBadges(${data.licenses}) = {
-    console.log(generateBadges);
+    console.log(${data.licenses});
    
 
 
