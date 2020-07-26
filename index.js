@@ -5,6 +5,7 @@ const markdown = require("./utils/generateMarkdown");
 
 
 
+
 // array of questions for user
 const promptUser = () => {
 return inquirer.prompt([
@@ -86,7 +87,7 @@ return inquirer.prompt([
             type: 'checkbox',
             name: 'license',
             message: 'Enter licensing information (Required)',
-            choices: ['Javascript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+            choices: ['Apache', 'GNU', 'MIT']
             },            
             {
                 type: 'input',

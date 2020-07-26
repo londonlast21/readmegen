@@ -1,9 +1,9 @@
-
+import generateBadges from "./generateBadges"
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
   
-  ## Badges: 
+  ## Badges: ${generateBadges(data.licenses)}
 
   ## Username: ${data.username}
   
