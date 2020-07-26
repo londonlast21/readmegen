@@ -1,3 +1,4 @@
+// function for badges
 generateBadges = function generateBadges(data) {
   switch (data) {
       case "Apache":
@@ -10,6 +11,7 @@ generateBadges = function generateBadges(data) {
           return;
   }
 }
+
 function generateMarkdown(data) {
   return `# ${data.title}
   
@@ -23,7 +25,7 @@ function generateMarkdown(data) {
   
 
   ## Table of Contents:
-  * [Description](#description)
+  * [Description](#)
   * [Installation](#installation)
   * [Usage](#usage) 
   * [Contributions](#contributions)
@@ -36,20 +38,25 @@ function generateMarkdown(data) {
   
   
 
-  ## Installation: ${data.installation}
+  ## Installation: 
+  <p>${data.installation}</p>
   
 
-  ## Usage: ${data.usage}
+  ## Usage: 
+  <p>${data.usage}</p>
   
 
-  ## Licenses: ${data.licenses}
+  ## Licenses: 
+  <p>${data.licenses}</p>
 
   
 
-  ## Contribution: ${data.contribution}
+  ## Contribution: 
+  <p>${data.contribution}</p>
   
 
-  ## Test: ${data.test}
+  ## Test: 
+  <p>${data.test}</p>
   
   
   ## Questions:
