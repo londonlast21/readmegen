@@ -49,25 +49,42 @@ return inquirer.prompt([
                     }
                 }
             },
-            {// ask if they want to create one
+           {const collectInputs = async(inputs = []) => { 
+            // ask if they want to create one
+                const prompts = [ 
+                {
                 type: 'input',
-                name: 'tableOfContents',
+                name: 'inputValue',
                 message: 'Enter title of section for table of contents',
-                default: true
-            
-            },
-            { 
+                },
+                {
                 type: 'confirm',
-                name: 'anotherHeading',
-                message: 'Would you like to add another heading?',
+                name: 'again',
+                message: 'Enter another heading?',
                 default: true
-            },
-            { 
-                type: 'input',
-                name: 'chapterTitle',
-                message: 'Enter another title',
-                when: ({anotherHeading}) => anotherHeading
-            },
+                }
+            ];
+                const { again, ...answers } = await
+                inquirer.prompt(prompts);
+                const newInputs = [...inputs, answers];
+                return again ? collectInputs(newInputs) :
+                newInputs;
+            };
+            const main = async () => {
+                const inputs = await collectInputs();
+                console.log(inputs);
+            };
+            main();
+
+
+               
+            
+            //{ 
+                // type: 'input',
+                // name: 'chapterTitle',
+                // message: 'Enter another title',
+                // when: ({anotherHeading}) => anotherHeading
+            //},
             {
                 type: 'input',
                 name:'installation',
@@ -116,7 +133,7 @@ return inquirer.prompt([
             },
             {
                 type: 'input',
-                name: 'tests',
+                name: 'test',
                 message: 'Enter testing information (Required)',
                 validate: test => {
                     if (test) {

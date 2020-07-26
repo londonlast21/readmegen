@@ -9,13 +9,11 @@ function generateMarkdown(data) {
 
   ## Description: ${data.description}
   
+  
 
   ## Table of Contents: 
-  this needs to loop for the entire list
-  var i;
-  for (i = 0; i < )
-  [TOC]${data.tableOfContents}
  
+  toc(${data.collectInputs}) 
   
   
 
