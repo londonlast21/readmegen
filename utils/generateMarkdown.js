@@ -1,5 +1,4 @@
-import generateBadges from "./generateBadges"
-// function to generate markdown for README
+const generateBadges = require('./generateBadges')
 function generateMarkdown(data) {
   return `# ${data.title}
   
@@ -22,7 +21,7 @@ function generateMarkdown(data) {
   * [Contact Me](#questions)
 
  
-  ${data.tableOfContents} 
+   
   
   
 

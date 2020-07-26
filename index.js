@@ -6,6 +6,7 @@ const markdown = require("./utils/generateMarkdown");
 
 
 
+
 // array of questions for user
 const promptUser = () => {
 return inquirer.prompt([
@@ -38,25 +39,6 @@ return inquirer.prompt([
                     }
                 }
             },
-            // {// ask if they want to create one
-            //     type: 'input',
-            //     name: 'tableOfContents',
-            //     message: 'Enter title of section for table of contents',
-            //     default: true
-            
-            // },
-            // { 
-            //     type: 'confirm',
-            //     name: 'anotherHeading',
-            //     message: 'Would you like to add another heading?',
-            //     default: true
-            // },
-            // { 
-            //     // type: 'input',
-            //     // name: 'chapterTitle',
-            //     // message: 'Enter another title',
-            //     // when: ({anotherHeading}) => anotherHeading
-            // },
             {
                 type: 'input',
                 name:'installation',
