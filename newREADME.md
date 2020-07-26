@@ -1,14 +1,14 @@
-# Sample READMe
+# Jack's Project
   
   ## Badges: 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
   ## Username: 
   <p>londonlast21</p>
   
 
   ## Description: 
-  <p>This is an example description</p>
+  <p>this is a sample</p>
   
   
 
@@ -27,24 +27,24 @@
   
 
   ## Installation: 
-  <p>To install this program, clone the file to your local computer and access it from the command Line.</p>
+  <p>download my repo</p>
   
 
   ## Usage: 
-  <p>For generating samples</p>
+  <p>for creaeting files</p>
   
 
   ## Licenses: 
-  <p>MIT</p>
+  <p>GNU</p>
 
   
 
   ## Contribution: 
-  <p>Me and the Cat</p>
+  <p>me and the cat</p>
   
 
   ## Test: 
-  <p>No current data</p>
+  <p>no test data results</p>
   
   
   ## Questions:
