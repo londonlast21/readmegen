@@ -1,36 +1,36 @@
-// // function to generate markdown for README
-// function generateMarkdown(data) {
-//   return `# ${data.title}
+// function to generate markdown for README
+function generateMarkdown(data) {
+  return `# ${data.title}
 
-//   ## Username: ${data.username}
+  ## Username: ${data.username}
   
 
-//   ## Description: ${data.description}
+  ## Description: ${data.description}
   
 
-//   ## Table of Contents: ${data.tableOfContents}
+  ## Table of Contents: ${data.tableOfContents}
   
 
-//   ## Installation: ${data.installation}
+  ## Installation: ${data.installation}
   
 
-//   ## Usage: ${data.usage}
+  ## Usage: ${data.usage}
   
 
-//   ## Licenses: ${data.licenses}
+  ## Licenses: ${data.licenses}
   
 
-//   ## Contribution: ${data.contribution}
+  ## Contribution: ${data.contribution}
   
 
-//   ## Test: ${data.test}
+  ## Test: ${data.test}
   
 
-//   ## Questions: "https${data.questions}
+  ## Questions: "https${data.questions}
   
 
   
-// `;
-// }
+`;
+}
 
-// module.exports = generateMarkdown;
+module.exports = generateMarkdown;
