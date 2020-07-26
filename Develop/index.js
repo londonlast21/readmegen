@@ -1,5 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const prompt = require('prompt');
 //const markdown = require("./utils/generateMarkdown");
 
 
@@ -7,8 +8,7 @@ const inquirer = require('inquirer');
 
 // array of questions for user
 const questions = [
-    promptUser = () => {
-        return inquirer.prompt([
+    .prompt([
             {
                 type: 'input',
                 name: 'name',
@@ -133,28 +133,37 @@ const questions = [
         
         
             ]);
-        }
+        
 ];
 
-inquirer.prompt(questions)
-    .then((inquirerResponse, data) => {
-        console.log("Making ReadMe");
-        fs.writeFileSync("ReadMe.md", inquirerRespoonse, data);
-    })
-    .catch((err) => {
-        console.log(err);
-    })
+prompt.start();
+
+prompt.get(questions, function (err, result){
+    console.log(data);
+})
+
+// inquirer.prompt(questions)
+//     .then((inquirerResponse, data) => {
+//         console.log("Making ReadMe");
+//         fs.writeFileSync("ReadMe.md", inquirerRespoonse, data);
+//     })
+//     .catch(error => {
+//        if(error) {console.log(err);
+//        } else {
+//             console.log("other error");
+//        }
+//     });
 
 
 
-// function to write README file
-function writeToFile(fileName, data) {
-}
+// // function to write README file
+// function writeToFile(fileName, data) {
+// }
 
-// function to initialize program
-function init() {
+// // function to initialize program
+// function init() {
 
-}
+// }
 
-// function call to initialize program
-init();
+// // function call to initialize program
+// init();
