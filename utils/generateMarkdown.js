@@ -15,10 +15,11 @@ generateBadges = function generateBadges(data) {
 function generateMarkdown(data) {
   return `# ${data.title}
   
-  ## Badges: ${generateBadges(data.licenses)}
+  ## Badges: 
+  <p>${generateBadges(data.licenses)}<p>
 
   ## Username: 
-  ###${data.username}
+  <p>${data.username}<p>
   
 
   ## Description: 
